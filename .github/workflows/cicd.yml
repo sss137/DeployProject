@@ -79,6 +79,7 @@ jobs:
 
   ## 2. deploy (CD)
   deploy:
+    if: false  # 배포 중지 ㅡㅡ
     ## 1) needs : "build" job 성공 시 "deploy" job 실행
     needs: build
     ## 2) runs-on : 실행 환경 설정 (job을 실행할 OS)
